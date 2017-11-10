@@ -1,0 +1,37 @@
+.modal-content { padding: 32px; border-radius: 0; }
+.modal-dialog { max-width: 440px;  }
+
+.form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #E18305;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+.form button:hover,.form button:active,.form button:focus {
+    background: #D07803;
+}
+
+.acct{ margin-top: 10px;}
+.modal-header { padding: 10px 0; margin-bottom: 10px; }
+  
