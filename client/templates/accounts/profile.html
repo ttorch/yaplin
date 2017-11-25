@@ -1,0 +1,33 @@
+<template name="profile">
+    <div class="form">
+        <div class="row">
+            <div class="col-xs-12">
+                Avatar
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <input type="text" name="firstname" placeholder="First name" value="{{currentUser.profile.firstName}}">
+                <input type="text" name="lastname" placeholder="Last name" value="{{currentUser.profile.lastname}}">
+                <input type="text" name="alias" placeholder="Alias" value="{{currentUser.profile.alias}}">
+                <select name="gender">
+                    {{#each gender}}
+                    <option value="{{value}}">{{text}}</option>
+                    {{/each}}
+                </select>
+                <input type='text' name="dateofbirth" placeholder="Date of Birth" id='datetimepicker4' value="{{currentUser.profile.dob}}" />
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <input type="text" name="email" value="{{ currentUser.emails.[0].address }}" disabled>
+                <input type="text" name="contact" placeholder="Contact #" value="{{currentUser.profile.contact}}">
+                <input type="text" name="street" placeholder="Street" value="{{currentUser.profile.street}}">
+                <input type="text" name="city" placeholder="City" value="{{currentUser.profile.city}}">
+                <select name="country">
+                    {{#each country}}
+                    <option value="{{value}}">{{text}}</option>
+                    {{/each}}
+                </select>
+            </div>
+        </div>
+    </div>
+</template>

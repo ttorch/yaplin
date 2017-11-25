@@ -27,3 +27,5 @@ session
 accounts-password
 msavin:mongol
 #accounts-base
+fortawesome:fontawesome
+themeteorchef:jquery-validation

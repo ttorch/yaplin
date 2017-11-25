@@ -1,4 +1,27 @@
 
+Template.login.onRendered(function(){
+    $('#app-login').validate({
+        rules: {
+            loginEmail: {
+                required: true,
+                email: true
+            },
+            loginPassword: {
+                required: true
+            }
+        },
+        messages: {
+            loginEmail: {
+                required: 'Please enter your email address to login.',
+                email: 'Please enter a valid email address.'
+            },
+            loginPassword: {
+                required: 'Please enter your password to login.'
+            }
+        }
+    })
+});
+
 Template.login.events({
     'click #aRegister':function(){
         Session.set('showRegister',true);

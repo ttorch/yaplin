@@ -1,0 +1,27 @@
+<template name="becomeabuddy_wizard">
+    <div id="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h2>Profile</h2>
+                </div>
+                <div class="col-lg-8">
+                    <form>
+                        {{> profile}}
+                        <hr>
+                        {{> yourself}}
+                        <div class="checkbox">
+                            <input id="checkbox1" type="checkbox">
+                            <label for="checkbox1">
+                                By clicking Verify, you agree to the Terms and Conditions set out by this site, including our Cookie Use. 
+                            </label>
+                        </div>
+                        <button type="submit">Verify</button>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+</template>
